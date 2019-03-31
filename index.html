@@ -5,6 +5,7 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/scripts.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
     <title>Order Pizza</title>
   </head>
   <body>
@@ -16,41 +17,42 @@
       <div id="blanks">
         <form id="foodOrder">
           <div class="pizzaRadio">
-		  <p>Pizza Dimensions</p>
-            <div class="radio">
+		  <p class="dimensions">Pizza Dimensions</p>
+            <div class="radio options">
               <label>
                 <input type="radio" name="size" value="1" checked>
-                Minimal
+                Minimal - $8
               </label>
             </div>
-            <div class="radio">
+            <div class="radio options">
                 <label>
                   <input type="radio" name="size" value="2">
-                  Moderate
+                  Moderate - $12
                 </label>
             </div>
-            <div class="radio">
+            <div class="radio options">
                 <label>
                   <input type="radio" name="size" value="3">
-                  Exceedingly Vast
+                  Exceedingly Vast - $15
                 </label>
             </div>
           </div>
           <br>
 		  <div class="form-group">
-		  <p>Flavor Enhancements</p>
+		  <p class="topping">Flavor Enhancements</p>
 			<div class="row">
-				<div class="col-md-4">
-				  <input type="checkbox" name="toppings" value="cheese"> Cheese<br>
-				  <input type="checkbox" name="toppings" value="pepperoni"> Pepperoni<br>
-				  <input type="checkbox" name="toppings" value="sausage"> Sausage<br>
+				<div class="col-md-4 options">
+				  <input type="checkbox" name="toppings" value="cheese"> Pressed Milk Curds<br>
+				  <input type="checkbox" name="toppings" value="pepperoni"> Cured Meat Discs<br>
+				  <input type="checkbox" name="toppings" value="sausage"> Cylindrical Spiced Meat<br>
 				</div>
-				 <div class="col-md-4">
-				  <input type="checkbox" name="toppings" value="pineapple"> Pineapple<br>
-				  <input type="checkbox" name="toppings" value="mushroom"> Mushroom<br>
+				 <div class="col-md-6 options">
+				  <input type="checkbox" name="toppings" value="pineapple"> Radially Coalesced Citrus Chunks<br>
+				  <input type="checkbox" name="toppings" value="mushroom"> Fungus<br>
 				 </div>
 		    </div>		 
 		  </div>
+		  <br>
 		  
 		  <button type="submit" class="btn btn-info" name="button">Consume</button>
 		  
@@ -58,9 +60,11 @@
 	  </div>
 		             
       <br>
-        <div class="priceOutput">
-          <p>$<span id="pizzaPrice"></span> </p>
-        </div>
+		<div class="row last-row">
+			<div class="priceOutput">
+			  <p>$<span id="pizzaPrice"></span> </p>
+			</div>
+		</div>
       </div>
     </div>
   </body>

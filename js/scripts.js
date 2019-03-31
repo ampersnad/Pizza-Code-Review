@@ -48,6 +48,7 @@ $(document).ready(function() {
     console.log("order", newOrder);
     var price = newOrder.calcCost(size, toppings);
 	console.log("price", price);
+	$(".priceOutput").show();
     $("#pizzaPrice").text(price);
 
   });

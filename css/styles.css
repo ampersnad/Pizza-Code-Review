@@ -1,0 +1,64 @@
+body {
+	font-family: 'Orbitron', sans-serif;
+	color: white;
+}
+
+.priceOutput {
+	display: none;
+	text-align: center;
+	font-size: 50px;
+	font-weight: bold;
+	
+}
+
+.last-row {
+	height: 200px;
+}
+
+.container {
+	background-color: black;
+	width: 100%;
+}
+
+.jumbotron {
+	margin:15px 30px 30px 30px;
+    border-radius:10px;
+    background-image: url("../img/pizza-splash.jpg");
+	background-size: cover;
+    color:white !important;
+    height:300px;
+}
+
+.options {
+	font-size: 18px;
+	
+}
+
+.btn {
+	background-color: black;
+	color: white;
+	border: 3px solid white;
+	cursor: pointer;
+}
+
+
+
+.jumbotron h1 {
+	font-size: 100px;
+	text-shadow: 3px 3px 4px #68797f;
+}
+
+.jumbotron p {
+	font-size: 18px;
+	text-shadow: 2px 2px 3px #68797f;
+}
+
+.dimensions {
+	font-size: 35px;
+	text-shadow: 2px 2px 3px #cbf6fc;
+}
+
+.topping {
+	font-size: 35px;
+	text-shadow: 2px 2px 3px #cbf6fc;
+}
