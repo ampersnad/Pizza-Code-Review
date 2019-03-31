@@ -24,7 +24,10 @@ body {
 	margin:15px 30px 30px 30px;
     border-radius:10px;
     background-image: url("../img/pizza-splash.jpg");
-	background-size: cover;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-color: black;
+	background-position: right;
     color:white !important;
     height:300px;
 }
